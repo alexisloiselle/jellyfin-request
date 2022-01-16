@@ -1,0 +1,81 @@
+:root {
+	--mdc-theme-primary: #00a4dc;
+}
+
+.mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+	color: var(--mdc-theme-primary) !important;
+}
+
+html,
+body {
+	background-color: #202020;
+}
+
+body {
+	font-family: 'Noto Sans', 'Noto Sans HK', 'Noto Sans JP', 'Noto Sans KR', 'Noto Sans SC',
+		sans-serif;
+}
+
+/* Field */
+.mdc-line-ripple::before {
+	border-bottom-color: #fff !important;
+}
+.mdc-floating-label {
+	color: #fff !important;
+}
+
+/* Select */
+.mdc-select {
+	width: 100%;
+}
+.mdc-select__selected-text {
+	color: #fff !important;
+}
+.mdc-select__dropdown-icon {
+	fill: #fff !important;
+}
+
+/* Autocomplete */
+.smui-autocomplete,
+.mdc-text-field {
+	width: 100%;
+}
+.mdc-text-field__input {
+	color: #fff !important;
+}
+.mdc-text-field.mdc-text-field--disabled {
+	opacity: 0.5;
+}
+
+/* Helper text */
+.mdc-text-field-helper-text {
+	color: #fff !important;
+}
+
+/* Button */
+.mdc-button {
+	width: 100%;
+	color: #fff !important;
+}
+.mdc-button:disabled {
+	background-color: var(--mdc-theme-primary);
+	opacity: 0.5;
+}
+.mdc-button:active {
+	background-color: var(--mdc-theme-primary);
+}
+.mdc-circular-progress__indeterminate-circle-graphic {
+	stroke: white;
+}
+
+/* Loading */
+.loading {
+	height: 24px;
+	width: 24px;
+	color: white;
+}
+
+/* Card */
+.mdc-card {
+	background-color: #303030 !important;
+}
