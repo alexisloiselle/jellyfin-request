@@ -12,60 +12,70 @@ body {
 }
 
 body {
-  color: #333;
   font-family: "Noto Sans", "Noto Sans HK", "Noto Sans JP", "Noto Sans KR",
     "Noto Sans SC", sans-serif;
 }
 
-a {
-  color: rgb(0, 100, 200);
-  text-decoration: none;
+/* Field */
+.mdc-line-ripple::before {
+  border-bottom-color: #fff !important;
+}
+.mdc-floating-label {
+  color: #fff !important;
 }
 
-a:hover {
-  text-decoration: underline;
+/* Select */
+.mdc-select {
+  width: 100%;
+}
+.mdc-select__selected-text {
+  color: #fff !important;
+}
+.mdc-select__dropdown-icon {
+  fill: #fff !important;
 }
 
-a:visited {
-  color: rgb(0, 80, 160);
+/* Autocomplete */
+.smui-autocomplete,
+.mdc-text-field {
+  width: 100%;
+}
+.mdc-text-field__input {
+  color: #fff !important;
+}
+.mdc-text-field.mdc-text-field--disabled {
+  opacity: 0.5;
 }
 
-label {
-  display: block;
+/* Helper text */
+.mdc-text-field-helper-text {
+  color: #fff !important;
 }
 
-input,
-button,
-select,
-textarea {
-  font-family: inherit;
-  font-size: inherit;
-  -webkit-padding: 0.4em 0;
-  padding: 0.4em;
-  margin: 0 0 0.5em 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+/* Button */
+.mdc-button {
+  width: 100%;
+  color: #fff !important;
+}
+.mdc-button:disabled {
+  background-color: var(--mdc-theme-primary);
+  opacity: 0.5;
+}
+.mdc-button:active {
+  background-color: var(--mdc-theme-primary);
+}
+.mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: white;
 }
 
-input:disabled {
-  color: #ccc;
+/* Loading */
+.loading {
+  height: 24px;
+  width: 24px;
+  color: white;
 }
 
-button {
-  color: #333;
-  background-color: #f4f4f4;
-  outline: none;
-}
-
-button:disabled {
-  color: #999;
-}
-
-button:not(:disabled):active {
-  background-color: #ddd;
-}
-
-button:focus {
-  border-color: #666;
+/* Card */
+.mdc-card {
+  background-color: #303030 !important;
 }
