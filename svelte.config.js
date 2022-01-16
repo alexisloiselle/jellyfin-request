@@ -14,8 +14,7 @@ const config = {
 		// Comment the paths if wants to run in dev mode.
 		paths: production
 			? {
-					base: '/jellyfin-request',
-					assets: '/jellyfin-request'
+					base: '/jellyfin-request'
 			  }
 			: undefined,
 		// hydrate the <div id="svelte"> element in src/app.html
